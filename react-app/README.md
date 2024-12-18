@@ -1,5 +1,8 @@
 ## 01장. 리액트 기초
 
+#### 실행화면:
+
+
 #### 교재:
 - 생활코딩! React 리액트 프로그래밍 (개정판) / 저자 이고잉<br>
 ![image](https://github.com/user-attachments/assets/8d5db1e2-7ffb-488f-a972-d827459bdbdd)  (이미지 출처. https://wikibook.co.kr/react-rev/)
