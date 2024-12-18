@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script>
+        console.log(`var va = ${va}`);
+        func1();
+        la = 10;    // let la - 10;
+        // var va = 10;
+        console.log(`var va = ${va}`);
+        console.log(`let la = ${la}`);
+
+
+        console.log("==================");
+        // 호이스팅. var 변수 선언이 뒤에 있더라도, 내부적으로 선언을 끌어올려 실행하고, 에러 없이 구문 실행. 값이 초기화가 되지는 않음. 미리 선언만 당겨서 해줌.
+        console.log(`var vb = ${vb}`);
+        var vb = 20;
+        console.log(`var vb = ${vb}`);
+        console.log("--------------------");
+        // console.log(`let lb = ${lb}`);   / 에러. / let 선언은 호이스팅 안됨. 무조건 선언 후 사용.
+        let lb = 20;
+        console.log(`let lb = ${lb}`);
+
+
+        // var 는 
+
+        console.log("==================");
+        //////////////////////
+        var va = 20;    // 20.
+        function f1() {
+            var va = 30;
+            console.log(`var va = ${va}`); // 30.
+        }
+        f1();   // 30.
+        console.log(`var va = ${va}`); // 20. 바뀌지 않음.
+
+        console.log("--------------------");
+        //////////////////////
+        var times = 4;  // 4.
+        if (times > 3) {
+            var va = 100;   // 100.
+            console.log(`var va = ${va}`); // 100.
+        }
+        console.log(`var va = ${va}`); // 100. 바뀜.
+
+        console.log("==================");
+
+
+        // let: 재정의 가능, 재선언 불가. var 대신 let 을 사용하자.
+        //////////////////////
+        let lla = 20;
+        function f2() {
+            let lla = 30;
+            console.log(`let lla = ${lla}`); // 30.
+        }
+        f2(); // 30.
+        console.log(`let lla = ${lla}`); // 20. 바뀌지 않음.
+        console.log("--------------------");
+
+        var times = 4;
+        if (times > 3) {
+            let lla = 100;
+            console.log(`let lla = ${lla}`); // 100.
+        }
+        console.log(`let lla = ${lla}`); // 20. 바뀌지 않음.
+
+        console.log("==================");
+        console.log("==================");
+
+        console.log(`add(10, 20) = ${add(10, 20)}`);
+    </script>
+</head>
+<body>
+    <p id="demo">홍길동</p>
+    <script>
+        // 함수.
+        const person = {
+            firstName : "길동",
+            lastName : "홍",
+            age : 20,
+            fullName: function (city, age) {
+                return this.lastName + " " + this.firstName + " :: " + city + " , age=" + age;
+            },
+            display: function () {
+                return this.firstName;
+            }
+        }
+
+        // 클래스.
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        const myCar1 = new Car("sonata", 2023);
+        const myCar2 = new Car("K5", 2024);
+        console.log(myCar1.name);
+
+        console.log(person.fullName()); // call.
+        const person1 = {
+            firstName : "순신",
+            lastName : "이"
+        }
+        console.log( person1.lastName + person1.firstName);
+        
+        document.getElementById("demo").innerHTML
+         = person.fullName.apply(person1, ("서울", 20));
+         // es6?.
+        console.log(person.display());
+        
+    </script>
+</body>
+</html>
