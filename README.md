@@ -6,6 +6,7 @@
 ### 교재:
 - 생활코딩! React 리액트 프로그래밍 (개정판) / 저자 이고잉<br>
 ![image](https://wikibook.co.kr/images/cover/l/9791158394202.jpg)  (이미지 출처. https://wikibook.co.kr/react-rev/)
+- [KDT-React (Github)](https://github.com/kkh3363/kdt_2024/tree/main/%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/11_React)
 
 ### 목차
 0. react-jses6/0    
