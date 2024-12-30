@@ -19,7 +19,7 @@
     
    \+ my-react-form    
    \+ myblog    
-   \+ 8. react-nextjs-example    
+   \+ react-nextjs-example    
 
 ### 참고 자료 및 사이트: 
 1. [0. React 앱 만들기](https://create-react-app.dev/docs/getting-started/)
@@ -32,6 +32,8 @@
 8. [5. useReducer - 생활코딩youtube](https://www.youtube.com/watch?v=E7bNzWrlKTE)
 9. [6. react-redux (2022년 개정판)](https://www.youtube.com/watch?v=yjuwpf7VH74)
 10. [7. Redux toolkit](https://www.youtube.com/watch?v=9wrHxqI6zuM)
-11. [+ 처음 만난 리액트(React) Inflearn](https://www.inflearn.com/course/%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8)
+11. [+ [react] form을 다루는 5가지 방법](https://rudaks.tistory.com/entry/react-form%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94-5%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95)
 12. [+ 처음 만난 리액트(React) - Mini Project(미니블로그) - github](https://github.com/soaple/mini-blog)
-13. [+ 8. Next.js 13 - 생활코딩](https://opentutorials.org/course/5098)
+13. [+ Next.js 13 - 생활코딩](https://opentutorials.org/course/5098)
+
+
